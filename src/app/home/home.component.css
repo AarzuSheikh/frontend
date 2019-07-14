@@ -1,0 +1,20 @@
+.img{
+    background-image: url('bird.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a{
+    color: brown;
+}
+
+
+
+.logo-small {
+    color: rgb(72, 167, 221);
+    font-size: 50px;
+  }
+  
+  .logo {
+    color: rgb(72, 167, 221);
+    font-size: 200px;
+  }

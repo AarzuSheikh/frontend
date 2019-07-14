@@ -1,0 +1,6 @@
+.image{
+    background-image: url('leaf.jpg');
+    background-size: cover;
+    width: 40px;
+    height: 100px;
+}

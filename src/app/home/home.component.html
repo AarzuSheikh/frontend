@@ -1,0 +1,116 @@
+<!-- <p>
+  home works!
+</p> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<nav class="navbar navbar-expand-sm" style="background-color: rgb(72, 167, 221)">
+    <!-- Brand/logo -->
+    <a class="navbar-brand">
+      <!-- <img src="bird.jpg"  style="width:40px;"> -->
+      <div class="img"></div>
+    </a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item" style="margin-left: 1180px;">
+        <a class="nav-link" routerLink="/logins"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dataentry"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="/loginn"></a>
+      </li>
+    </ul>
+    <p style="margin-left: -1120px;font-size:25px; color: white">TIAA RMS</p>
+  </nav>
+
+  <div class="container text-center">
+      <h2>SERVICES</h2>
+      <h4>What we offer</h4>
+      <br>
+      <div class="row">
+        <div class="col-sm-3">
+          <span class="	glyphicon glyphicon-home logo-small"></span>
+          <a  class="nav-link" routerLink="/logins">HOME</a>
+          <!-- <p>Lorem ipsum dolor sit amet..</p> -->
+        </div>
+        <div class="col-sm-3">
+          <span class="glyphicon glyphicon-flag logo-small"></span>
+          <a  class="nav-link" routerLink="/loginn">NOTIFICATIONS</a>
+          <!-- <p>Lorem ipsum dolor sit amet..</p> -->
+        </div>
+        <div class="col-sm-3">
+          <span class="glyphicon glyphicon-edit logo-small "></span>
+          <a  class="nav-link" routerLink="/dataentry">DATA ENTRY</a>
+          <!-- <p>Lorem ipsum dolor sit amet..</p> -->
+        </div>
+        <div class="col-sm-2">
+            <span class="glyphicon glyphicon-user logo-small "></span>
+            <a  class="nav-link" routerLink="/logins">ADMIN</a>
+            <!-- <p>Lorem ipsum dolor sit amet..</p> -->
+          </div>
+        </div>
+        <br><br>
+      <!-- <div class="row">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-leaf logo-small"></span>
+          <h4>GREEN</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-certificate logo-small"></span>
+          <h4>CERTIFIED</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-wrench logo-small"></span>
+          <h4>HARD WORK</h4>
+          <p>Lorem ipsum dolor sit amet..</p>
+        </div>
+      </div> -->
+    </div>
+    <div style="margin-top:10px;">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div>
+                  <!-- <h2 style="text-align: center;margin-top: 10px;background-color: rgb(53, 167, 175)"><b>SEARCH HERE</b></h2> -->
+                  <!-- <input class="form-control" id="myInput" type="text" placeholder="Search.."> -->
+                  <!-- <label>Enter here: </label> -->
+                  <input [(ngModel)]="searchText" placeholder="Search by name or id.." class="advancedSearchTextbox form-control" >
+                  <!-- <br> --><p></p>
+                  <table  class="table table-striped">
+                      <thead>
+                          <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">FTE_FName</th>
+                            <th scope="col">FTE_LName</th>
+                            <th scope="col">FTE_FullName</th>
+                            <th scope="col">employee_Status</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Pyramid</th>
+                          </tr>
+                        </thead> 
+                        <tbody>
+                            <tr  *ngFor="let x of customerData | gridfilter: {name: searchText, Add:searchText, type:searchText}; let i=index;">
+                                <td style="width: 5%;">{{i +1}}</td>
+                                <td style="width: 10%;">{{x.name}}</td>
+                                <td style="width: 5%;">{{x.Add}}</td>
+                                <td style="width: 15%;">{{x.type}}</td>
+                                <td style="width: 15%;">{{x.type}}</td>
+                                <td style="width: 15%;">{{x.type}}</td>
+                              </tr>
+                        </tbody> 
+                    
+                    </table>
+        
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+  
